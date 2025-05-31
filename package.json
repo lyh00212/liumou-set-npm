@@ -1,0 +1,26 @@
+{
+    "name": "liumou-set-npm",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "postinstall": "node -e \"try{require('./postInstall.js')}catch(e){}\""
+    },
+    "bin": {
+        "lyh": "./src/index.js"
+    },
+    "keywords": [
+        "npm",
+        "yarn",
+        "cnpm"
+    ],
+    "author": "",
+    "license": "ISC",
+    "description": "set npm registry",
+    "dependencies": {
+        "chalk": "^4.0.0",
+        "commander": "^13.1.0",
+        "inquirer": "^8.0.0",
+        "node-http-ping": "^0.3.1"
+    }
+}
