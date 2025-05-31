@@ -4,16 +4,15 @@ const { program } = require("commander");
 const inquirer = require("inquirer");
 const fs = require("fs");
 const chalk = require("chalk");
-const { exec, execSync } = require("child_process");
+const { exec } = require("child_process");
 const ping = require("node-http-ping");
 const path = require("path");
 const registries = require("../registries.json");
 const PKG = require("../package.json");
-const { validate } = require("graphql");
 
 program.version(PKG.version);
 
-const defaultList = ["npm", "yarn", "tencent", "cnpm", "taobao", "npmMirror"];
+const defaultList = ["npm", "yarn", "tencent", "cnpm", "taobao", "huawei"];
 // 获取当前的npm镜像
 const getOrigin = () => {
     return new Promise((resolve, reject) => {

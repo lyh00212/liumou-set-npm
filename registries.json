@@ -24,14 +24,9 @@
         "registry": "https://registry.npmmirror.com/",
         "ping": "https://registry.npmmirror.com"
     },
-    "npmMirror": {
-        "home": "https://skimdb.npmjs.com/",
-        "registry": "https://skimdb.npmjs.com/registry/",
-        "ping": "https://skimdb.npmjs.com/registry"
-    },
-    "liumou": {
-        "home": "http://registry.liummm.npmjs.org/",
-        "registry": "http://registry.liummm.npmjs.org/",
-        "ping": "http://registry.liummm.npmjs.org"
+    "huawei": {
+        "home": "https://mirrors.huaweicloud.com/repository/npm",
+        "registry": "https://mirrors.huaweicloud.com/repository/npm",
+        "ping": "https://mirrors.huaweicloud.com/repository/npm"
     }
 }
