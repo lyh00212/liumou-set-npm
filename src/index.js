@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { program } = require("commander");
+const { Command } = require("commander");
 const inquirer = require("inquirer");
 const fs = require("fs");
 const chalk = require("chalk");
@@ -9,6 +9,8 @@ const ping = require("node-http-ping");
 const path = require("path");
 const registries = require("../registries.json");
 const PKG = require("../package.json");
+
+const program = new Command();
 
 program.version(PKG.version);
 
@@ -324,4 +326,4 @@ program
             }
         );
     });
-program.parse(process.argv);
+program.parse();
